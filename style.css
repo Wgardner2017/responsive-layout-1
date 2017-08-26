@@ -26,10 +26,6 @@ a {
   color: inherit;
 }
 
-.flex-wrapper {
-  display: flex;
-}
-
 /*Removing bullets and indentation for unordered lists used inside top and bottom nav, centering them and capitalizing them*/
 nav > ul {
   list-style: none;
@@ -112,6 +108,7 @@ footer h2 {
 }
 
 .footer-space {
+  display: flex;
   justify-content: space-between;
   align-items: flex-end;
   border-top: 1px solid #7f7f7f;
@@ -159,5 +156,34 @@ footer h2 {
 
   .responsive-layout-profile img {
     width: 90%;
+  }
+
+  .portfolio-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .portfolio-wrap figure {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(50% - 2em);
+    padding: 0.25em;
+  }
+
+  .largernav {
+    display: initial;
+  }
+
+  .mobilenav {
+    display: none;
+  }
+
+  .footer-space {
+    margin: 0 2em;
+  }
+
+  .footer-space li {
+    padding-left: 2em;
   }
 }
