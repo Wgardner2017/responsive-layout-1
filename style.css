@@ -144,4 +144,20 @@ footer h2 {
     margin: 10px;
     background-color: #fafafa;
   }
+
+  .introduction {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .introduction p {
+    margin: 0;
+    order: -1;
+    max-width: 57%;
+    text-align: left;
+  }
+
+  .responsive-layout-profile img {
+    width: 90%;
+  }
 }
