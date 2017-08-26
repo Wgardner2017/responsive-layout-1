@@ -1,4 +1,4 @@
-/* *{
+/* * {
   border: 1px solid red;
 } */
 
@@ -9,9 +9,25 @@ body {
   text-align: center;
 }
 
+/*Make paragraph text grey*/
+p {
+  color: #7f7f7f;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 1.75em;
+  text-align: center;
+}
+
+/*Turn off text decoration and color for anchor tags*/
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .flex-wrapper {
   display: flex;
-  justify-content: center;
 }
 
 /*Removing bullets and indentation for unordered lists used inside top and bottom nav, centering them and capitalizing them*/
@@ -21,12 +37,13 @@ nav > ul {
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  background-color: white;
+  background-color: #fafafa;
 }
 
-/*Hiding nav buttons inside footer for mobile version*/
-.largernav {
-  display: none;
+header nav li {
+  padding: 10px 0;
+  margin: 10px 0;
+  background-color: white;
 }
 
 /*Setting background colors*/
@@ -38,16 +55,55 @@ body {
   background-color: white;
 }
 
-h1 {
+section {
+  padding: 3em 0;
+}
+
+.responsive-layout-profile img {
+  width: 60%;
+  height: auto;
+}
+
+/*Each section h2 gets uppercase letters*/
+section h2 {
+  font-size: 1em;
+  text-transform: uppercase;
   font-weight: 900;
-  font-size: 1.75em;
-  text-align: center;
+  margin-bottom: 2.75em;
+}
+
+figure {
+  margin: 0;
 }
 
 figure img {
   width: 100%;
 }
 
+.contact h3 {
+  color: #7f7f7f;
+}
+
+/*Hiding nav buttons inside footer for mobile version*/
+.largernav {
+  display: none;
+}
+
+footer h2,
+footer li {
+  font-size: 1em;
+}
+
 footer h2 {
-  font-size: 1.25em;
+  padding-bottom: 3px;
+}
+
+.footer-space {
+  justify-content: space-between;
+  align-items: flex-end;
+  border-top: 1px solid #7f7f7f;
+}
+
+.footer-space li {
+  background-color: #fafafa;
 }
