@@ -40,10 +40,23 @@ nav > ul {
   background-color: #fafafa;
 }
 
+header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*Set width to maximum for mobile layout*/
+header,
+header h1,
+header nav {
+  width: 100%;
+}
+
 header nav li {
   padding: 10px 0;
   margin: 10px 0;
   background-color: white;
+  width: 100%;
 }
 
 /*Setting background colors*/
@@ -106,4 +119,29 @@ footer h2 {
 
 .footer-space li {
   background-color: #fafafa;
+}
+
+/*Tablet layout*/
+@media (min-width: 48em) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
+  header nav {
+    /*width: initial;*/
+    display: flex;
+    justify-content: center;
+  }
+
+  nav > ul {
+    display: flex;
+    justify-content: center;
+    max-width: initial;
+  }
+
+  header nav li {
+    margin: 10px;
+    background-color: #fafafa;
+  }
 }
